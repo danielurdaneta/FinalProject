@@ -1,5 +1,5 @@
 # UFC Fight Predictor
-A predictive model by Julia Cho, Kimberly Murphy, Daniel Urdaneta, and Adrian Zamora 
+###### A predictive model by Julia Cho, Kimberly Murphy, Daniel Urdaneta, and Adrian Zamora 
 
 ## Overview:
 In this project, our goal is to create a machine learning model which can predict the winner of a UFC welterweight fight using historical fighter data.  We also hope to glean insight into the most successful fighter metrics such as stance and age. 
