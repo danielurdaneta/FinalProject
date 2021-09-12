@@ -15,7 +15,7 @@ In this project, our goal is to create a machine learning model which can predic
 For our first analysis, we ran a PCA analysis to see which variables happened to influence the winning odds the most. Our biggest influencer in that category was roughly ~3% so the culmination of all of the statistics is what will determine the most accurate model. We used a linear regression model, deep neural network, and a Random Forest to start with.
 
 
-### Preliminary Machine Learning Models
+## Preliminary Machine Learning Models
 We hope to use this dataset containing fighter data from 1993-2021 to create a machine learning model which can predict which fighter will win in a given fight.  To beging, we are focusing only on the welterweight division as it has the most members and fights over the years. Since this is a binary questions (win/lose) we are testing a Logistic regression, Random Forest, Neural Network, and Deep Learning models.
 We tested to see if there was any significant difference between using the entire data set or only the historical stats for each fighter.  There did not appear to be any difference.  
  - For the Logistic regression our predictive model had an accuracy score of 50.9%
