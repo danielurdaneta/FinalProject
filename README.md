@@ -22,7 +22,7 @@ We tested to see if there was any significant difference between using the entir
  - The Random Foreset model returned an accuracy 54.8%
  - Our first attempt using a Neural Network model (using relu/sigmoid) returned an accuracy score of 49%.  After using a loop to test 60 different trials, the best model was able to predict with an accuracy of 66.6%.  This model had the following hyperparameters:
  
- - {'activation': 'tanh', 'first_units': 9, 'num_layers': 3, 'units_0': 5, 'units_1': 1, 'units_2': 3, 'units_3': 9, 'units_4': 9, 'units_5': 1, 'tuner/epochs': 20,  'tuner/initial_epoch': 0, 'tuner/bracket': 0, 'tuner/round': 0}
+   - {'activation': 'tanh', 'first_units': 9, 'num_layers': 3, 'units_0': 5, 'units_1': 1, 'units_2': 3, 'units_3': 9, 'units_4': 9, 'units_5': 1, 'tuner/epochs': 20,  'tuner/initial_epoch': 0, 'tuner/bracket': 0, 'tuner/round': 0}
 
  - Finally, the Deep learing model returned an accuracy of 52.6%
 
