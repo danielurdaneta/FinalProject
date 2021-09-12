@@ -17,8 +17,7 @@ For our first analysis, we ran a PCA analysis to see which variables happened to
 
 
 ## Preliminary Machine Learning Models
-We hope to use this dataset containing fighter data from 1993-2021 to create a machine learning model which can predict which fighter will win in a given fight.  To beging, we are focusing only on the welterweight division as it has the most members and fights over the years. Since this is a binary questions (win/lose) we are testing a Logistic regression, Random Forest, Neural Network, and Deep Learning models.
-We tested to see if there was any significant difference between using the entire data set or only the historical stats for each fighter.  There did not appear to be any difference.  
+We hope to use this dataset containing fighter data from 1993-2021 to create a machine learning model which can predict which fighter will win in a given fight.  To beging, we are focusing only on the welterweight division as it has the most members and fights over the years. We initially approached this by adjusting the dataset such that each fighter of each fight was listed as its own record and then treated the model as a binary questions (win/lose).   With this idea in mind, we tested a Logistic regression, Random Forest, Neural Network, and Deep Learning models.
  - For the Logistic regression our predictive model had an accuracy score of 50.9%
  - The Random Foreset model returned an accuracy 54.8%
  - Our first attempt using a Neural Network model (using relu/sigmoid) returned an accuracy score of 49%.  After using a loop to test 60 different trials, the best model was able to predict with an accuracy of 66.6%.  This model had the following hyperparameters:
@@ -27,3 +26,4 @@ We tested to see if there was any significant difference between using the entir
 
  - Finally, the Deep learing model returned an accuracy of 52.6%
 
+**After further consideration,** we determined this would not be the optimal way to produce the predictive model we had initially envisioned.  So, we went back to using the original clean dataset with both fighters in each fight labeled as red or blue and listed within the same record of the database.  Then we tested a Random Forest model to predict if the blue fighter would be the winner.  We were able to achieve **58% accuracy** using this model.
