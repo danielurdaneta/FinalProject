@@ -76,4 +76,14 @@ The following models were trained and tested with the new feature designations:
  - **Basic Neural Network < 40% accuracy**
  - **Deep Neural Network <30% accuracy**
 
+## Dashboard 
+---
+#### Week 2
+---
+
+The dashboard of this project will be a web application created using HTML, CSS, JavaScript and its library D3. The web app will consist of a description of the project, graphs created in the exploratory phase of the project, and the Machine Learning models. The user will be able to change the ML model using a drop off menu, and in this way to observe how we execute that specific model and the results we obtained. Below we can see a draft of the web app:
+
+![db_blueprint](https://user-images.githubusercontent.com/81272629/133940428-57959cf9-5ced-40b3-9e03-4833e2b2e825.png)
+
+
 
