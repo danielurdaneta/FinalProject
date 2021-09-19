@@ -85,5 +85,7 @@ The dashboard of this project will be a web application created using HTML, CSS,
 
 ![db_blueprint](https://user-images.githubusercontent.com/81272629/133940428-57959cf9-5ced-40b3-9e03-4833e2b2e825.png)
 
+The below shows the relationship between the two tables creating the welterweight data used to perform the analysis
+![ERD.JPG](https://github.com/danielurdaneta/FinalProject/blob/main/ERD.JPG)
 
 
