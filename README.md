@@ -57,21 +57,23 @@ The different models then used the LabelEncoded "Winner" column as the target an
  - Fighter height
  - Fighter reach
  - Fighter weight
+ - Fighter Country
+ - Fighter Style
 
 Of the 112 fights, 80% were assigned to the training set and 20% assigned to the test set.
 
 The following models were trained and tested with the new feature designations:
- - **Logistic Regression – 65% accuracy**
+ - **Logistic Regression – 59% accuracy**
    - benefits:  Used for classification problems, uses a sigmoid function to determine class label AND provides a probability, useful because we can determine WHICH Features are most important to the model 
- - **Boosting Methods – 65% accuracy**
+ - **Boosting Methods – 52% accuracy**
    - benefits:  Similar to random forest except each tree is built sequentially, taking information from the previous tree thus making each successive tree better
  - **Support Vector Machines - 59% accuracy**
    - benefits: Used for classification of small or medium sized complex (lots of features) datasets
- - **Decision Trees - 41% accuracy**
+ - **Decision Trees - 47% accuracy**
    -benefits:  Used for classification problems, analyzes possible features and decides which features best split the data to that different data points go to one side of the split while minimizing error
- - **Random Forest - 43% accuracy**
+ - **Random Forest - 57% accuracy**
    -benefits:  Uses many learners to enhance the performance of any single one (an ensemble of many decision trees)
- - **Basic Neural Network < 35% accuracy**
+ - **Basic Neural Network < 40% accuracy**
  - **Deep Neural Network <30% accuracy**
 
 
