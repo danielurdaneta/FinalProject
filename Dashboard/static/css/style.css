@@ -1,0 +1,47 @@
+.padding{
+  padding: 20px;
+}
+
+body{
+  margin-right: 250px;
+  margin-left: 250px;
+}
+
+.title{
+  color:darkred;
+  font-family: Tahoma;
+}
+
+.words{
+  font-family: Tahoma;
+  font-size: larger;
+}
+
+.deadliestWeight{
+  width: 600px;
+  height: 390px;
+}
+
+.deadliestStanceAVG{
+  width: 600px;
+  height: 310px;
+}
+
+
+.deadliestStance{
+  width: 600px;
+  height: 300px;
+}
+
+hr {
+  margin-left: 0px;
+  height: 3px;
+  color: darkred;
+  background-color:darkred;
+}
+
+.vl {
+  border-left: 3px solid darkred;
+  height: 240px;
+  padding: 12px;
+}
