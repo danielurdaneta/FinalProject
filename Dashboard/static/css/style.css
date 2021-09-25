@@ -40,8 +40,14 @@ hr {
   background-color:darkred;
 }
 
-.vl {
+.vl2 {
   border-left: 3px solid darkred;
   height: 240px;
+  padding: 12px;
+}
+
+.vl {
+  border-left: 3px solid darkred;
+  height: 310px;
   padding: 12px;
 }

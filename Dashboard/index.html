@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <div class="container" >
       <div class = "col-md-12 text-center padding">
         <h1 class="title">UFC Fight Predictor</h1>
@@ -29,7 +30,9 @@
           <img src="static/images/deadliestWeight.png" class="deadliestWeight">
         </div>
         <div class="col-md-5">
-          <p class="words vl"> As we can see, the <span class="title"> <strong> deadliest weightclass </strong></span>  is heavyweight with more than 10 wins by KO. We decide to use the Welterweight because it's a better way to......</p>
+          <p class="words vl"> 
+            Initial findings on the weight classes showed that the heavyweight class is by far <span class="title"> <strong>the most deadly in terms of KO’s </strong></span>. Since their punches carry more mass behind them, they are more likely to cause serious damage to someone if they land a hit on the head. Whereas, the women-straw weight class had the least amount of KO’s due to less force and mass, showing that the punches in that weight class are a lot less likely to cause a knock out.
+          </p>
         </div>
       </div>
       <br>
@@ -38,8 +41,8 @@
           <img src="static/images/deadliestStanceAvg.png" class="deadliestStanceAVG">
         </div>
         <div class="col-md-5">
-          <p class="words vl"> 
-            As we can see, the <span class="title"> <strong> deadliest weightclass </strong></span>  is heavyweight with more than 10 wins by KO. We decide to use the Welterweight because it's a better way to......
+          <p class="words vl2"> 
+            <span class="title"> <strong>The Open Stance</strong></span> had the higher average win by TKO, indicating that a fighter that uses this stance is more likely to get a knockout. The next graph will show a different story.
           </p>
         </div>
       </div>
@@ -49,24 +52,63 @@
           <img src="static/images/deadliestStance.png" class="deadliestStance">
         </div>
         <div class="col-md-5">
-          <p class="words vl"> As we can see, the <span class="title"> <strong> deadliest weightclass </strong></span>  is heavyweight with more than 10 wins by KO. We decide to use the Welterweight because it's a better way to......</p>
+          <p class="words vl">
+            Although fighters that practiced  the Open Stance saw a higher average of knockouts, <span class="title"> <strong>the Orthodox Stance and the Southpaw stance </strong></span> experienced the highest number of wins by KO/TKO. This can mean that masters of these two stances are more likely to be successful in their careers whereas Open Stance might be easier to pick up for newer fighters and is averaging a higher KO/TKO by stance. 
+          </p>
         </div>
       </div>
       <br>
       <br>
       <div>
-        <h4 class="title"> Machine Learning Models</h4>
+        <h4 class="title"> Choose your fighter</h4>
         <hr>
       </div>
-     
+      <div class="row"> 
+        <div class="col-md-3">
+          <h5 style="font-family: Tahoma;">Fighter</h5>
+          <select id="fighters" onchange= fighterChanged(this.value)>
+          </select>
+        </div>
+        <br><br><br>
+      </div>
       <div class="row">
-          <div class="col-md-3">
-            <h5 style="font-family: Tahoma;">Select your ML Model</h5>
-            <select id="ml-model" onchange= optionChanged(this.value)>
-              <option value="logisticRegression">Logistic Regression</option>
-              <option value="decisionTree">Decision Tree</option>
-            </select>
-          </div>
+        <div class="col-md-12">
+          <table class = "table table-striped">
+            <thead>
+                <tr>
+                    <th>Time Fought</th>
+                    <th>Rounds Fought</th>
+                    <th>Total Titles</th>
+                    <th>Win Streak</th>
+                    <th>Lose Streak</th>
+                    <th>Longest Win Streak</th>
+                    <th>Wins</th>
+                    <th>Loses</th>
+                    <th>Height</th>
+                    <th>Reach</th>
+                    <th>Weight</th>
+                    <th>Age</th>
+                    <th>Stance</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        </div>
+      </div>
+      <br><br>
+      <div>
+        <h4 class="title"> Machine Learning Models</h4>
+        <hr>
+      </div>     
+      <div class="row">
+        <div class="col-md-3">
+          <h5 style="font-family: Tahoma;">Select your ML Model</h5>
+          <select id="mlModel" onchange= modelChanged(this.value)>
+            <option value="logisticRegression">Logistic Regression</option>
+            <option value="decisionTree">Decision Tree</option>
+           </select>
+       </div>
       </div>
       <br>
       <div class="row">
