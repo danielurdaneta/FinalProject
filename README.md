@@ -105,8 +105,9 @@ Finally, the “Winner” column was converted using LabelEncoder
 
 Adjustments
  - N_estimators – accuracy leveled off at 200
- - Optimal learning rate – 1
  - Max depth = 5
+ - Optimal learning rate – 1
+
  
 ![image of learning rate results](https://github.com/danielurdaneta/FinalProject/blob/d093f007bcbcf999a037eb4752ef4a4b7b4371b7/Images/learning%20rate.JPG)
 
