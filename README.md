@@ -116,7 +116,11 @@ Adjustments
 Adjustments
  - solver = newton-cg
 
+![image of accuracy](https://github.com/danielurdaneta/FinalProject/blob/39cc5b5640e1832ac9ec26405414d647c1892cf2/Images/model%20accuracy.JPG)
 
+**Important features**
+
+![image of important features](https://github.com/danielurdaneta/FinalProject/blob/39cc5b5640e1832ac9ec26405414d647c1892cf2/Images/important%20features.jpg)
 
 
 
