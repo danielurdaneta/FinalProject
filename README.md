@@ -76,6 +76,50 @@ The following models were trained and tested with the new feature designations:
  - **Basic Neural Network < 40% accuracy**
  - **Deep Neural Network <30% accuracy**
 
+---
+#### Week 3
+---
+In week 3 we attempted to tune our models for better accuracy by adjusting the number of features and focusing on our highest performing models.  
+
+Upon reflection, it seemed possible that our machine learning models might benefit from some manipulation of the data set.  Since the computer does not know which features belong to the red fighter vs blue fighter it may not be able to work optimally.  To test this hypothesis, we created a new database which combined the information from each fighter into one column feature.  
+For example:
+ ‘B_age’ & ‘R_age’ -->  ‘BR_age’   --> the difference between the two fighters ages.   (Blue – Red)
+
+Additionally, fighter stance was converted using LabelEncoder and then used to create a numeric metric.
+ - Orthodox : 0
+ - Southpaw : 1
+ - Switch : 2
+ 
+‘BR_stance’ --> the difference between the blue fighter stance and the red fighter stance.
+(Leon Edwards (blue) = Orthodox = 0) – (Belal Muhammad (red) = Southpaw = 1) = -1 overall score
+
+Finally, the “Winner” column was converted using LabelEncoder
+Blue Win : 0
+Draw : 1
+Red Win : 2
+
+**Model tuning:**
+
+*Gradient Boosted Trees:  70% accuracy*
+Adjustments
+ - N_estimators – accuracy leveled off at 200
+ - Optimal learning rate – 1
+ - Max depth = 5
+
+*Random Forest:  69.4% accuracy*
+Adjustments 
+ - n_estimators – accuracy leveled off at 200 
+ - max depth  - 20
+ - min samples leaf – 2
+
+*Logistic Regression:  64.5% accuracy*
+Adjustments
+ - solver = newton-cg
+
+
+
+
+
 ## Dashboard 
 ---
 #### Week 2
