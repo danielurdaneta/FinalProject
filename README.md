@@ -82,6 +82,7 @@ The following models were trained and tested with the new feature designations:
 In week 3 we attempted to tune our models for better accuracy by adjusting the number of features and focusing on our highest performing models.  
 
 Upon reflection, it seemed possible that our machine learning models might benefit from some manipulation of the data set.  Since the computer does not know which features belong to the red fighter vs blue fighter it may not be able to work optimally.  To test this hypothesis, we created a new database which combined the information from each fighter into one column feature.  
+
 For example:
  ‘B_age’ & ‘R_age’ -->  ‘BR_age’   --> the difference between the two fighters ages.   (Blue – Red)
 
