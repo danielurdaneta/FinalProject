@@ -102,18 +102,21 @@ Finally, the “Winner” column was converted using LabelEncoder
 **Model tuning:**
 
 *Gradient Boosted Trees:  70% accuracy*
+
 Adjustments
  - N_estimators – accuracy leveled off at 200
  - Optimal learning rate – 1
  - Max depth = 5
 
 *Random Forest:  69.4% accuracy*
+
 Adjustments 
  - n_estimators – accuracy leveled off at 200 
  - max depth  - 20
  - min samples leaf – 2
 
 *Logistic Regression:  64.5% accuracy*
+
 Adjustments
  - solver = newton-cg
 
