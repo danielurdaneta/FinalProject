@@ -90,13 +90,13 @@ Additionally, fighter stance was converted using LabelEncoder and then used to c
  - Southpaw : 1
  - Switch : 2
  
-‘BR_stance’ --> the difference between the blue fighter stance and the red fighter stance.
-(Leon Edwards (blue) = Orthodox = 0) – (Belal Muhammad (red) = Southpaw = 1) = -1 overall score
+![image of calculation](https://github.com/danielurdaneta/FinalProject/blob/6ca8d8a994c6ae10f70699ddd2b265146d3dd6bd/Images/stance%20calculation.JPG)
 
 Finally, the “Winner” column was converted using LabelEncoder
-Blue Win : 0
-Draw : 1
-Red Win : 2
+
+ - Blue Win : 0
+ - Draw : 1
+ - Red Win : 2
 
 **Model tuning:**
 
