@@ -105,15 +105,16 @@
         <div class="col-md-3">
           <h5 style="font-family: Tahoma;">Select your ML Model</h5>
           <select id="mlModel" onchange= modelChanged(this.value)>
+            <option value="randomForest">Random Forest</option>
             <option value="logisticRegression">Logistic Regression</option>
-            <option value="decisionTree">Decision Tree</option>
+            <option value="gradientBoostedTrees">Gradient Boosted Trees</option>
            </select>
        </div>
       </div>
       <br>
       <div class="row">
         <div class="col-md-12">
-          <img src="static/images/logisticRegression.png" style="width: 1000px; height: auto;" id="model">
+          <img src="static/images/randomForest.png" style="width: 1000px; height: auto;" id="model">
         </div>
       </div>
       <br>

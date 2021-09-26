@@ -1,12 +1,16 @@
 // Data used to filter by selected model.
 let machineLearningModel = [
   {
+    model: 'randomForest',
+    src: 'static/images/randomForest.png'
+  },
+  {
     model: 'logisticRegression',
     src: 'static/images/logisticRegression.png'
   },
   {
-    model: 'decisionTree',
-    src: 'static/images/decisionTree.png'
+    model: 'gradientBoostedTrees',
+    src: 'static/images/gradientBoostedTrees.png'
   }
 ];
 
