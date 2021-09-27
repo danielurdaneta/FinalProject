@@ -10,7 +10,7 @@ In this project, our goal is to create a machine learning model which can predic
 ---
 **The goal:**  Create a machine learning model which can predict which fighter will win in a given welterweight fight. We focused on the welterweight class, specifically, as it is among the largest division in terms of fighters and popularity over the years.  
 
-**The dataset:**  The dataset we used https://www.kaggle.com/rajeevw/ufcdata contains fighter data from 1993-2021.  Each row is an individual fight with the fighter stats for both the blue and red fighter.
+**The dataset:**  The [Kaggle dataset](https://www.kaggle.com/rajeevw/ufcdata) we used contains fighter data from 1993-2021.  Each row is an individual fight with the fighter stats for both the blue and red fighter.
 
 We approached this as a **supervised classification**—Will the winner be the red fighter, the blue fighter, or a draw.   With this idea in mind, we tested several different models including a Logistic regression, SVM, Random Forest, Gradient Boosted models.  From these the Gradient Boosted model generated the greatest accuracy.
 
@@ -51,7 +51,7 @@ The model was trained using the **GradientBoostingClassifier**.  This model was 
  - Optimal learning rate – 1
  
 **Assessing the model:** A confusion matric, accuracy score, and classification report was generated using the sklearn library. 
-![Image of the results()
+![Image of the results](https://github.com/danielurdaneta/FinalProject/blob/216241c47569e91c64241c442cc01e3cf201a34f/Images/one_model%20accuracy.JPG)
 
 
 ## Dashboard 
