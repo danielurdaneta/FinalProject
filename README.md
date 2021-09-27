@@ -46,9 +46,9 @@ The **sklearn library** was used to split the dataset such that 80% of the recor
 The model was trained using the **GradientBoostingClassifier**.  This model was chosen because each tree is built sequentially using the information from previous trees to build the next.  
 
 **Model tuning:**  The following parameters were adjusted to optimize our model:
- - N_estimators – accuracy leveled off at 200
- - Max depth = 5
- - Optimal learning rate – 1
+
+![image of model parameters](https://github.com/danielurdaneta/FinalProject/blob/de52beb00279168e6aa64b218980b549768ff931/Images/model%20tuning.JPG)
+
  
 **Assessing the model:** A confusion matric, accuracy score, and classification report was generated using the sklearn library. 
 ![Image of the results](https://github.com/danielurdaneta/FinalProject/blob/216241c47569e91c64241c442cc01e3cf201a34f/Images/one_model%20accuracy.JPG)
