@@ -12,7 +12,7 @@ In this project, our goal is to create a machine learning model which can predic
 
 **The dataset:**  The [Kaggle dataset](https://www.kaggle.com/rajeevw/ufcdata) we used contains fighter data from 1993-2021.  Each row is an individual fight with the fighter stats for both the blue and red fighter.
 
-We approached this as a **supervised classification**—Will the winner be the red fighter, the blue fighter, or a draw.   With this idea in mind, we tested several different models including a Logistic regression, SVM, Random Forest, Gradient Boosted models.  From these the Gradient Boosted model generated the greatest accuracy.
+We approached this as a **supervised classification**—Will the winner be the red fighter, the blue fighter, or a draw?   With this idea in mind, we tested several different models including a Logistic regression, SVM, Random Forest, Gradient Boosted models.  From these the Gradient Boosted model generated the greatest accuracy.
 
 **Preparing the data:**   The original dataset was filtered using pandas to only include those fights classified within the welterweight division.  Any fights that had missing data or which were scheduled but did not happen were removed.  Additionally, any string data-- such as the Fighters’ Stance and the Winner of the fight – was converted to integers using LabelEncoder.  Finally, the data was manipulated in Excel to show the differences between the blue and red fighter in an individual fight. 
 For example:
