@@ -21,6 +21,8 @@ For example:
 
 **Building the Model:** The processed flat csv file was stored within postgres and accessed via SQLalchemy in the modeling.
 
+![image of sqlalchemy](https://github.com/danielurdaneta/FinalProject/blob/884d36b024974074acd7e2a93eb230db089c9d74/Images/SQLAlchemy.JPG)
+
 It was determined after many iterations that the following features were the most impactful and, therefore, included as the final *features(X):* 
 
  - Total time fought (16%)
@@ -42,6 +44,8 @@ It was determined after many iterations that the following features were the mos
 The **sklearn library** was used to split the dataset such that 80% of the records were assigned to the training set and 20% assigned to the test set.  
 
 **StandardScaler** was used to scale the data to reduce the chance of undue weight being applied to features with larger numbers (such as reach(cm) and total time fought) 
+
+![image of split and scale](https://github.com/danielurdaneta/FinalProject/blob/884d36b024974074acd7e2a93eb230db089c9d74/Images/split%20and%20scale.JPG)
 
 The model was trained using the **GradientBoostingClassifier**.  This model was chosen because each tree is built sequentially using the information from previous trees to build the next.  
 
