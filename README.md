@@ -57,6 +57,7 @@ The model was trained using the **GradientBoostingClassifier**.  This model was 
 
  
 **Assessing the model:** A confusion matric, accuracy score, and classification report was generated using the sklearn library. 
+
 ![Image of the results](https://github.com/danielurdaneta/FinalProject/blob/216241c47569e91c64241c442cc01e3cf201a34f/Images/one_model%20accuracy.JPG)
 
 
