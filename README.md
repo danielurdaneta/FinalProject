@@ -14,12 +14,14 @@ In this project, our goal is to create a machine learning model which can predic
 
 We approached this as a **supervised classification**—Will the winner be the red fighter, the blue fighter, or a draw?   With this idea in mind, we tested several different models including a Logistic regression, SVM, Random Forest, Gradient Boosted models.  From these the Gradient Boosted model generated the greatest accuracy.
 
-**Preparing the data:**   The original dataset was filtered using pandas to only include those fights classified within the welterweight division.  Any fights that had missing data or which were scheduled but did not happen were removed.  Additionally, any string data-- such as the Fighters’ Stance and the Winner of the fight – was converted to integers using LabelEncoder.  Finally, the data was manipulated in Excel to show the differences between the blue and red fighter in an individual fight. 
+[Preparing the data:](https://github.com/danielurdaneta/FinalProject/blob/e2fc10a1a8b80865a5743e9ff57515cdb10f4159/data_clean_926.ipynb) 
+The original dataset was filtered using pandas to only include those fights classified within the welterweight division.  Any fights that had missing data or which were scheduled but did not happen were removed.  Additionally, any string data-- such as the Fighters’ Stance and the Winner of the fight – was converted to integers using LabelEncoder.  Finally, the data was manipulated in Excel to show the differences between the blue and red fighter in an individual fight. 
 For example:
  
 ![image of calculation](https://github.com/danielurdaneta/FinalProject/blob/6ca8d8a994c6ae10f70699ddd2b265146d3dd6bd/Images/stance%20calculation.JPG)
 
-**Building the Model:** The processed flat csv file was stored within postgres and accessed via SQLalchemy in the modeling.
+[Building the Model:](https://github.com/danielurdaneta/FinalProject/blob/e2fc10a1a8b80865a5743e9ff57515cdb10f4159/Gradient_Boosted_Trees_Model_wk3_Final.ipynb)
+The processed flat csv file was stored within postgres and accessed via SQLalchemy in the modeling.
 
 ![image of sqlalchemy](https://github.com/danielurdaneta/FinalProject/blob/884d36b024974074acd7e2a93eb230db089c9d74/Images/SQLAlchemy.JPG)
 
