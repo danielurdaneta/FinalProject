@@ -76,6 +76,6 @@ You can follow the link to see our dashboard: https://danielurdaneta.github.io/F
 ## Database
 
 The below shows the relationship between the two tables creating the welterweight data used to perform the analysis
-![ERD.JPG](https://github.com/danielurdaneta/FinalProject/blob/main/ERD.JPG)
+![ERD.JPG](https://github.com/danielurdaneta/FinalProject/blob/main/Images/ERD.JPG)
 
 
