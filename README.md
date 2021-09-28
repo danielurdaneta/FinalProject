@@ -56,12 +56,22 @@ The model was trained using the **GradientBoostingClassifier**.  This model was 
 
 ## Dashboard 
 ---
-#### Week 2
----
 
-The dashboard of this project will be a web application created using HTML, CSS, JavaScript and its library D3. The web app will consist of a description of the project, graphs created in the exploratory phase of the project, and the Machine Learning models. The user will be able to change the ML model using a drop off menu, and in this way to observe how we execute that specific model and the results we obtained. Below we can see a draft of the web app:
+The dashboard of this project will be a web application created using HTML, CSS, JavaScript and its library D3. The web app will consist of a description of the project, graphs created in the exploratory phase of the project, and the Machine Learning models. The user will be able to change the ML model using a drop off menu, and in this way to observe how we execute that specific model and the results we obtained, the user will also be able to select a fighter and see all his stats in a table. Below we can see an image of the interactive  elements of our web app:
 
-![db_blueprint](https://user-images.githubusercontent.com/81272629/133940428-57959cf9-5ced-40b3-9e03-4833e2b2e825.png)
+
+![interactive elementes dashboard](https://user-images.githubusercontent.com/81272629/135006205-e9c9a780-0a93-49c1-b581-d61e4394924f.png)
+
+
+You can follow the link to see our dashboard: https://danielurdaneta.github.io/FinalProject/
+
+
+
+
+
+
+
+
 
 The below shows the relationship between the two tables creating the welterweight data used to perform the analysis
 ![ERD.JPG](https://github.com/danielurdaneta/FinalProject/blob/main/ERD.JPG)
